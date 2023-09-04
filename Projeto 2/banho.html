@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Banhos - PetShop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/img/logo.png"
+              alt="Bootstrap"
+              width="60"
+              height="48"
+            />
+            PET SHOP</a
+          >
+          <div class="col-6"><form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form></div>
+          <a class="navbar-brand" href="./login.html"
+            >LOGIN
+            <img
+              src="./assets/img/login.png"
+              alt="Bootstrap"
+              width="60"
+              height="48"
+            />
+          </a>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg" style="border: 1px black solid">
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse d-flex justify-content-center"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" href="./index.html">INICIAL</a>
+              <a class="nav-link" href="./sobre.html">SOBRE</a>
+              <a class="nav-link" href="./racoes.html">RAÇÕES</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./servicos.html"
+                >SERVIÇOS</a
+              >
+              <a class="nav-link" href="./contato.html">CONTATO</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container text-center" style="margin: 50px">
+        <div class="row">
+          <div class="col">
+            <img
+              src="./assets/img/banho2.webp"
+              class="img-thumbnail racoes"
+              alt="banho"
+            />
+          </div>
+          <div class="col">
+            <h2>BANHOS</h2>
+            <form action="" class="text-start">
+              <label class="form-label" for="porte">Porte: </label>
+              <select
+                class="form-select"
+                name="porte"
+                id="porte"
+                onchange="valor()"
+              >
+                <option selected></option>
+                <option value="p">Pequeno</option>
+                <option value="m">Médio</option>
+                <option value="g">Grande</option>
+                <option value="gg">Gigante</option>
+              </select>
+              <div class="form-check" id="telebusca">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="s"
+                  id="telebusca"
+                />
+                <label class="form-check-label" for="telebusca">
+                  Preciso que busque meu cão!
+                </label>
+              </div>
+              <label class="form-label" for="agendar">Dia e Horário: </label>
+              <input
+                type="datetime-local"
+                class="form-control"
+                name="agendar"
+                id="agendar"
+              />
+              <div
+                class="d-flex justify-content-center"
+                style="margin-top: 10px"
+              >
+                <button
+                  type="submit"
+                  class="btn btn-danger"
+                  onclick="agendado()"
+                >
+                  Agendar
+                </button>
+              </div>
+            </form>
+            <h4 style="margin: 10px">Valor: <span id="valor"></span></h4>
+          </div>
+        </div>
+        <div class="row">
+          <p>Descrição:</p>
+          <p class="border p-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Accusantium beatae voluptatum, laborum dolor eligendi molestias quo
+            impedit deserunt cupiditate possimus praesentium explicabo nihil
+            ipsam expedita voluptatem consequatur? Sequi, fuga veniam. Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem non
+            doloremque sapiente quod error quos, mollitia quasi aspernatur
+            quidem labore nostrum quibusdam maxime suscipit, iure iusto! Amet
+            voluptas accusamus ipsum?
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <p>
+              Horários:<br />
+              Terça a Sábado: 08:00 - 18:00
+            </p>
+            <p>
+              Contato:<br />
+              (51) 9999-9999
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              Endereço:<br />
+              Rua da PetShop, 999. Porto Alegre/RS.
+            </p>
+            <p>Site desenvolvido por Lucas.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

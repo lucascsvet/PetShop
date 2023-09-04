@@ -1,0 +1,23 @@
+header{
+    background-color: #F5FAC1;
+}
+
+footer{
+    background-color: #F5FAC1;
+}
+
+.produtos{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.racoes{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.infos h2{
+    padding-bottom: 40px;
+}
